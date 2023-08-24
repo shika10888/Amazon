@@ -3,6 +3,22 @@
 <suite name="Failed suite [AmazonTDD]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="TestNG(failed)">
     <classes>
+      <class name="testLayer.SearchingTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="user_must_be_able_to_search_with_keyword"/>
+          <include name="home"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.SearchingTest -->
+      <class name="testLayer.FiltrationTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="home"/>
+          <include name="user_must_be_able_to_select_filters"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.FiltrationTest -->
       <class name="testLayer.YourAddressTest">
         <methods>
           <include name="destroy"/>
@@ -11,14 +27,36 @@
           <include name="signininitiate"/>
         </methods>
       </class> <!-- testLayer.YourAddressTest -->
-      <class name="testLayer.ShoppingCartTest">
+      <class name="testLayer.LoginSecurityTest">
         <methods>
           <include name="destroy"/>
-          <include name="user_must_be_able_to_add_items_to_cart"/>
+          <include name="user_must_be_able_to_edit_securityDetails"/>
           <include name="home"/>
           <include name="signininitiate"/>
         </methods>
+      </class> <!-- testLayer.LoginSecurityTest -->
+      <class name="testLayer.ShoppingCartTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="home"/>
+          <include name="user_must_be_able_to_add_items_to_cart"/>
+          <include name="signininitiate"/>
+        </methods>
       </class> <!-- testLayer.ShoppingCartTest -->
+      <class name="testLayer.SigninTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.SigninTest -->
+      <class name="testLayer.YourOrdersTest">
+        <methods>
+          <include name="user_must_be_able_to_see_orderHistory"/>
+          <include name="destroy"/>
+          <include name="home"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.YourOrdersTest -->
     </classes>
   </test> <!-- TestNG(failed) -->
 </suite> <!-- Failed suite [AmazonTDD] -->

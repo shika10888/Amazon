@@ -19,7 +19,7 @@ public class DriverUtil {
       try {
         prop = new Properties();
         FileInputStream file = new FileInputStream(
-            "C:\\Users\\alvin\\eclipse-workspace\\AmazonTDDFramework\\src\\test\\java\\environmentvariables\\Config.properties");
+            "C:\\Users\\alvin\\OneDrive\\Documents\\Projects\\Amazon\\AmazonTDDFramework\\src\\test\\java\\environmentvariables\\Config.properties");
         prop.load(file);
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
