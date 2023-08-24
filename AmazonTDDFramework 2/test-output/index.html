@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AmazonTDD" class="navigator-link">
+              <span class="suite-name border-failed">AmazonTDD</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AmazonTDD" class="navigator-link ">
+                    <span>C:\Users\alvin\eclipse-workspace\AmazonTDDFramework 2\Testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AmazonTDD" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AmazonTDD" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AmazonTDD" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AmazonTDD" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AmazonTDD" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AmazonTDD" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AmazonTDD" class="hide-methods failed suite-AmazonTDD"> (hide)</a> <!-- hide-methods failed suite-AmazonTDD -->
+                      <a href="#" panel-name="suite-AmazonTDD" class="show-methods failed suite-AmazonTDD"> (show)</a> <!-- show-methods failed suite-AmazonTDD -->
+                    </span>
+                    <div class="method-list-content failed suite-AmazonTDD">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.YourAddressTest" class="method navigator-link" hash-for-method="User_Must_be_able_to_add_address">User_Must_be_able_to_add_address</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.ShoppingCartTest" class="method navigator-link" hash-for-method="user_must_be_able_to_add_items_to_cart">user_must_be_able_to_add_items_to_cart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AmazonTDD -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AmazonTDD" class="hide-methods passed suite-AmazonTDD"> (hide)</a> <!-- hide-methods passed suite-AmazonTDD -->
+                      <a href="#" panel-name="suite-AmazonTDD" class="show-methods passed suite-AmazonTDD"> (show)</a> <!-- show-methods passed suite-AmazonTDD -->
+                    </span>
+                    <div class="method-list-content passed suite-AmazonTDD">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.LoginSecurityTest" class="method navigator-link" hash-for-method="user_must_be_able_to_edit_securityDetails">user_must_be_able_to_edit_securityDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.SearchingTest" class="method navigator-link" hash-for-method="user_must_be_able_to_search_with_keyword">user_must_be_able_to_search_with_keyword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.YourOrdersTest" class="method navigator-link" hash-for-method="user_must_be_able_to_see_orderHistory">user_must_be_able_to_see_orderHistory</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonTDD" title="testLayer.FiltrationTest" class="method navigator-link" hash-for-method="user_must_be_able_to_select_filters">user_must_be_able_to_select_filters</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AmazonTDD -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AmazonTDD" class="panel AmazonTDD">
+          <div class="suite-AmazonTDD-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testLayer.YourAddressTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="User_Must_be_able_to_add_address">
+                  </a> <!-- User_Must_be_able_to_add_address -->
+                  <span class="method-name">User_Must_be_able_to_add_address</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #address-ui-widgets-countryCode (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utility.TimeUtils.explicitWait(TimeUtils.java:15)
+	at testLayer.YourAddressTest.User_Must_be_able_to_add_address(YourAddressTest.java:31)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-failed -->
+          <div class="suite-AmazonTDD-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testLayer.ShoppingCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_must_be_able_to_add_items_to_cart">
+                  </a> <!-- user_must_be_able_to_add_items_to_cart -->
+                  <span class="method-name">user_must_be_able_to_add_items_to_cart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Medium Lingge Versatile Artificial Leather Handbag Women&apos;s Shoulder Bag Fashion Women&apos;s Bag&quot;}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.10.0&apos;, revision: &apos;c14d967899&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73740f828c976fcc9d1abf4f52f9774c, findElement {using=link text, value=Medium Lingge Versatile Artificial Leather Handbag Women&apos;s Shoulder Bag Fashion Women&apos;s Bag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at pom.PomShoppingCart.clickHandbag(PomShoppingCart.java:33)
+	at testLayer.ShoppingCartTest.user_must_be_able_to_add_items_to_cart(ShoppingCartTest.java:33)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-failed -->
+          <div class="suite-AmazonTDD-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testLayer.FiltrationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_must_be_able_to_select_filters">
+                  </a> <!-- user_must_be_able_to_select_filters -->
+                  <span class="method-name">user_must_be_able_to_select_filters</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-passed -->
+          <div class="suite-AmazonTDD-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testLayer.SearchingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_must_be_able_to_search_with_keyword">
+                  </a> <!-- user_must_be_able_to_search_with_keyword -->
+                  <span class="method-name">user_must_be_able_to_search_with_keyword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-passed -->
+          <div class="suite-AmazonTDD-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testLayer.LoginSecurityTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_must_be_able_to_edit_securityDetails">
+                  </a> <!-- user_must_be_able_to_edit_securityDetails -->
+                  <span class="method-name">user_must_be_able_to_edit_securityDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-passed -->
+          <div class="suite-AmazonTDD-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testLayer.YourOrdersTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_must_be_able_to_see_orderHistory">
+                  </a> <!-- user_must_be_able_to_see_orderHistory -->
+                  <span class="method-name">user_must_be_able_to_see_orderHistory</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonTDD-class-passed -->
+        </div> <!-- panel AmazonTDD -->
+        <div panel-name="test-xml-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\alvin\eclipse-workspace\AmazonTDDFramework 2\Testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AmazonTDD&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestNG&quot;&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;testLayer&quot;/&gt;
+    &lt;/packages&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testLayer.CreateAccountFormTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testLayer.CreateAccountFormTest --&gt;
+      &lt;class name=&quot;testLayer.SigninTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testLayer.SigninTest --&gt;
+      &lt;class name=&quot;testLayer.YourPaymentsTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testLayer.YourPaymentsTest --&gt;
+      &lt;class name=&quot;testLayer.CreateAccountFormTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.FiltrationTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.LoginSecurityTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.SearchingTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.ShoppingCartTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.SigninTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.YourAddressTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.YourOrdersTest&quot;/&gt;
+      &lt;class name=&quot;testLayer.YourPaymentsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestNG --&gt;
+&lt;/suite&gt; &lt;!-- AmazonTDD --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AmazonTDD</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestNG (12 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AmazonTDD</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">signedIn</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">User_Must_be_able_to_add_address</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">user_must_be_able_to_add_items_to_cart</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">user_must_be_able_to_edit_securityDetails</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">user_must_be_able_to_search_with_keyword</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">user_must_be_able_to_see_orderHistory</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">user_must_be_able_to_select_filters</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AmazonTDD</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AmazonTDD');
+function tableData_AmazonTDD() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(6);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'User_Must_be_able_to_add_address')
+data.setCell(0, 2, 'testLayer.YourAddressTest')
+data.setCell(0, 3, 61789);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'user_must_be_able_to_select_filters')
+data.setCell(1, 2, 'testLayer.FiltrationTest')
+data.setCell(1, 3, 6892);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'user_must_be_able_to_see_orderHistory')
+data.setCell(2, 2, 'testLayer.YourOrdersTest')
+data.setCell(2, 3, 5640);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'user_must_be_able_to_edit_securityDetails')
+data.setCell(3, 2, 'testLayer.LoginSecurityTest')
+data.setCell(3, 3, 4144);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'user_must_be_able_to_search_with_keyword')
+data.setCell(4, 2, 'testLayer.SearchingTest')
+data.setCell(4, 3, 3559);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'user_must_be_able_to_add_items_to_cart')
+data.setCell(5, 2, 'testLayer.ShoppingCartTest')
+data.setCell(5, 3, 2730);
+window.suiteTableData['AmazonTDD']= { tableData: data, tableDiv: 'times-div-AmazonTDD'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-AmazonTDD">
+              </div> <!-- times-div-AmazonTDD -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AmazonTDD</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">17 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.SearchingTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.FiltrationTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.LoginSecurityTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.YourAddressTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.ShoppingCartTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.SigninTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">Signin</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.YourPaymentsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+                <span class="ignored-method-name">user_must_get_an_error_message_on_leaving_CVVfield_empty</span>
+                <br/>
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.YourOrdersTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signininitiate</span>
+                <br/>
+                <span class="ignored-method-name">destroy</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testLayer.CreateAccountFormTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">signup_should_pass_on_valid_entry</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AmazonTDD" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.SigninTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">signininitiate</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.FiltrationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">6029 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">user_must_be_able_to_select_filters</span>
+                <span class="method-start">6514 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.LoginSecurityTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">13414 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">user_must_be_able_to_edit_securityDetails</span>
+                <span class="method-start">14122 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.SearchingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">18269 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">user_must_be_able_to_search_with_keyword</span>
+                <span class="method-start">18712 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.ShoppingCartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">22274 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">user_must_be_able_to_add_items_to_cart</span>
+                <span class="method-start">22937 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.YourAddressTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">25671 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">User_Must_be_able_to_add_address</span>
+                <span class="method-start">26344 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.YourOrdersTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">home</span>
+                <span class="method-start">88134 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">user_must_be_able_to_see_orderHistory</span>
+                <span class="method-start">88718 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testLayer.SigninTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">destroy</span>
+                <span class="method-start">94400 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

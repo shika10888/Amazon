@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AmazonTDD">
+
+	<test name="TestNG">
+		<packages>
+			<package name="testLayer" />
+		</packages>
+		<classes>
+			<class name="testLayer.CreateAccountFormTest">
+				<methods>
+					<exclude name=".*" />
+				</methods>
+			</class>
+			<class name="testLayer.SigninTest">
+				<methods>
+					<exclude name=".*" />
+				</methods>
+			</class>
+			<class name="testLayer.YourPaymentsTest">
+				<methods>
+					<exclude name=".*" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AmazonTDD]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="TestNG(failed)">
+    <classes>
+      <class name="testLayer.YourAddressTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="home"/>
+          <include name="User_Must_be_able_to_add_address"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.YourAddressTest -->
+      <class name="testLayer.ShoppingCartTest">
+        <methods>
+          <include name="destroy"/>
+          <include name="user_must_be_able_to_add_items_to_cart"/>
+          <include name="home"/>
+          <include name="signininitiate"/>
+        </methods>
+      </class> <!-- testLayer.ShoppingCartTest -->
+    </classes>
+  </test> <!-- TestNG(failed) -->
+</suite> <!-- Failed suite [AmazonTDD] -->

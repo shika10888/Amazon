@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="17" total="23" passed="4" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-23T20:58:56 EDT" name="AmazonTDD" finished-at="2023-08-23T21:00:25 EDT" duration-ms="88378">
+    <groups>
+      <group name="signedIn">
+        <method signature="FiltrationTest.user_must_be_able_to_select_filters()[pri:0, instance:testLayer.FiltrationTest@4f20a5e0]" name="user_must_be_able_to_select_filters" class="testLayer.FiltrationTest"/>
+        <method signature="LoginSecurityTest.user_must_be_able_to_edit_securityDetails()[pri:0, instance:testLayer.LoginSecurityTest@1d782abe]" name="user_must_be_able_to_edit_securityDetails" class="testLayer.LoginSecurityTest"/>
+        <method signature="SearchingTest.user_must_be_able_to_search_with_keyword()[pri:0, instance:testLayer.SearchingTest@6df7988f]" name="user_must_be_able_to_search_with_keyword" class="testLayer.SearchingTest"/>
+        <method signature="ShoppingCartTest.user_must_be_able_to_add_items_to_cart()[pri:0, instance:testLayer.ShoppingCartTest@22fba58c]" name="user_must_be_able_to_add_items_to_cart" class="testLayer.ShoppingCartTest"/>
+        <method signature="YourAddressTest.User_Must_be_able_to_add_address()[pri:0, instance:testLayer.YourAddressTest@2fe88a09]" name="User_Must_be_able_to_add_address" class="testLayer.YourAddressTest"/>
+        <method signature="YourOrdersTest.user_must_be_able_to_see_orderHistory()[pri:0, instance:testLayer.YourOrdersTest@66bfd864]" name="user_must_be_able_to_see_orderHistory" class="testLayer.YourOrdersTest"/>
+      </group> <!-- signedIn -->
+    </groups>
+    <test started-at="2023-08-23T20:58:56 EDT" name="TestNG" finished-at="2023-08-23T21:00:25 EDT" duration-ms="88378">
+      <class name="testLayer.SearchingTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.SearchingTest@6df7988f]" started-at="2023-08-23T20:59:08 EDT" name="home" finished-at="2023-08-23T20:59:09 EDT" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="user_must_be_able_to_search_with_keyword()[pri:0, instance:testLayer.SearchingTest@6df7988f]" started-at="2023-08-23T20:59:09 EDT" name="user_must_be_able_to_search_with_keyword" finished-at="2023-08-23T20:59:12 EDT" duration-ms="3559" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_must_be_able_to_search_with_keyword -->
+      </class> <!-- testLayer.SearchingTest -->
+      <class name="testLayer.FiltrationTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.FiltrationTest@4f20a5e0]" started-at="2023-08-23T20:58:56 EDT" name="home" finished-at="2023-08-23T20:58:57 EDT" duration-ms="484" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="user_must_be_able_to_select_filters()[pri:0, instance:testLayer.FiltrationTest@4f20a5e0]" started-at="2023-08-23T20:58:57 EDT" name="user_must_be_able_to_select_filters" finished-at="2023-08-23T20:59:04 EDT" duration-ms="6892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_must_be_able_to_select_filters -->
+      </class> <!-- testLayer.FiltrationTest -->
+      <class name="testLayer.SigninTest">
+        <test-method is-config="true" signature="signininitiate()[pri:0, instance:testLayer.SigninTest@4565a70a]" started-at="2023-08-23T20:58:50 EDT" name="signininitiate" finished-at="2023-08-23T20:58:56 EDT" duration-ms="5979" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signininitiate -->
+        <test-method is-config="true" signature="destroy()[pri:0, instance:testLayer.SigninTest@4565a70a]" started-at="2023-08-23T21:00:25 EDT" name="destroy" finished-at="2023-08-23T21:00:25 EDT" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroy -->
+      </class> <!-- testLayer.SigninTest -->
+      <class name="testLayer.YourAddressTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.YourAddressTest@2fe88a09]" started-at="2023-08-23T20:59:16 EDT" name="home" finished-at="2023-08-23T20:59:17 EDT" duration-ms="672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="User_Must_be_able_to_add_address()[pri:0, instance:testLayer.YourAddressTest@2fe88a09]" started-at="2023-08-23T20:59:17 EDT" name="User_Must_be_able_to_add_address" finished-at="2023-08-23T21:00:18 EDT" duration-ms="61789" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: #address-ui-widgets-countryCode (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #address-ui-widgets-countryCode (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at utility.TimeUtils.explicitWait(TimeUtils.java:15)
+at testLayer.YourAddressTest.User_Must_be_able_to_add_address(YourAddressTest.java:31)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- User_Must_be_able_to_add_address -->
+      </class> <!-- testLayer.YourAddressTest -->
+      <class name="testLayer.YourOrdersTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.YourOrdersTest@66bfd864]" started-at="2023-08-23T21:00:18 EDT" name="home" finished-at="2023-08-23T21:00:19 EDT" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="user_must_be_able_to_see_orderHistory()[pri:0, instance:testLayer.YourOrdersTest@66bfd864]" started-at="2023-08-23T21:00:19 EDT" name="user_must_be_able_to_see_orderHistory" finished-at="2023-08-23T21:00:25 EDT" duration-ms="5640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_must_be_able_to_see_orderHistory -->
+      </class> <!-- testLayer.YourOrdersTest -->
+      <class name="testLayer.LoginSecurityTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.LoginSecurityTest@1d782abe]" started-at="2023-08-23T20:59:04 EDT" name="home" finished-at="2023-08-23T20:59:04 EDT" duration-ms="708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="user_must_be_able_to_edit_securityDetails()[pri:0, instance:testLayer.LoginSecurityTest@1d782abe]" started-at="2023-08-23T20:59:04 EDT" name="user_must_be_able_to_edit_securityDetails" finished-at="2023-08-23T20:59:08 EDT" duration-ms="4144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_must_be_able_to_edit_securityDetails -->
+      </class> <!-- testLayer.LoginSecurityTest -->
+      <class name="testLayer.ShoppingCartTest">
+        <test-method is-config="true" signature="home()[pri:0, instance:testLayer.ShoppingCartTest@22fba58c]" started-at="2023-08-23T20:59:12 EDT" name="home" finished-at="2023-08-23T20:59:13 EDT" duration-ms="663" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+        <test-method signature="user_must_be_able_to_add_items_to_cart()[pri:0, instance:testLayer.ShoppingCartTest@22fba58c]" started-at="2023-08-23T20:59:13 EDT" name="user_must_be_able_to_add_items_to_cart" finished-at="2023-08-23T20:59:16 EDT" duration-ms="2730" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"link text","selector":"Medium Lingge Versatile Artificial Leather Handbag Women's Shoulder Bag Fashion Women's Bag"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73740f828c976fcc9d1abf4f52f9774c, findElement {using=link text, value=Medium Lingge Versatile Artificial Leather Handbag Women's Shoulder Bag Fashion Women's Bag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Medium Lingge Versatile Artificial Leather Handbag Women's Shoulder Bag Fashion Women's Bag"}
+  (Session info: chrome=115.0.5790.171)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [73740f828c976fcc9d1abf4f52f9774c, findElement {using=link text, value=Medium Lingge Versatile Artificial Leather Handbag Women's Shoulder Bag Fashion Women's Bag}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 115.0.5790.171, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\alvin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53452}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53452/devtoo..., se:cdpVersion: 115.0.5790.171, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 73740f828c976fcc9d1abf4f52f9774c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:199)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:132)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:531)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at pom.PomShoppingCart.clickHandbag(PomShoppingCart.java:33)
+at testLayer.ShoppingCartTest.user_must_be_able_to_add_items_to_cart(ShoppingCartTest.java:33)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- user_must_be_able_to_add_items_to_cart -->
+      </class> <!-- testLayer.ShoppingCartTest -->
+    </test> <!-- TestNG -->
+  </suite> <!-- AmazonTDD -->
+</testng-results>
